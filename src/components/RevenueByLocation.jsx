@@ -1,5 +1,4 @@
-// RevenueByLocation.jsx
-import WorldMap from "../assets/maps/WorldMap.svg?react";
+import WorldMap from "../assets/maps/WorldMap.svg";
 
 export default function RevenueByLocation() {
   const locations = [
@@ -9,7 +8,7 @@ export default function RevenueByLocation() {
     { city: "Singapore", revenue: 61000 },
   ];
 
-  // Fixed benchmark (you can adjust this)
+  // Fixed benchmark (adjustable)
   const scaleMax = 100000;
 
   return (
@@ -22,7 +21,7 @@ export default function RevenueByLocation() {
 
       {/* World Map */}
       <div className="relative h-[120px] w-full flex items-center justify-center">
-        <WorldMap className="w-full h-full object-contain" />
+        <img src={WorldMap} alt="World Map" className="w-full h-full object-contain" />
       </div>
 
       {/* Revenue rows */}
