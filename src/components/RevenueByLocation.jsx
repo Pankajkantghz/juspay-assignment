@@ -1,4 +1,4 @@
-import WorldMap from "../assets/maps/WorldMap.svg";
+import WorldMap from "../assets/maps/worldmap.svg";
 
 export default function RevenueByLocation() {
   const locations = [
